@@ -1,0 +1,39 @@
+{
+  "name": "quizbuldr2",
+  "version": "0.0.1",
+  "description": "Редактор xml викторин",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack --watch",
+    "build": "node_modules/.bin/webpack",
+    "live": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeometricEath/QuizBuilder2.git"
+  },
+  "author": "Sergey Frolov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeometricEath/QuizBuilder2/issues"
+  },
+  "homepage": "https://github.com/GeometricEath/QuizBuilder2#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^0.14.3",
+    "mini-css-extract-plugin": "^0.4.0",
+    "pug-loader": "git+https://github.com/pugjs/pug-loader.git#master",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}
