@@ -61,8 +61,8 @@ export default class Field {
                         <input name="inp4" class="field_answer" id="inp4" placeholder="Вариант ответа 4" type="text">
                     </div>
                     <div class="field_control">
-                    <input type="submit" class="field_submit field_button value="Отправить">
-                    <button type="clear" class="field_button">Очистить</button>
+                    <input type="submit" class="field_submit field_button" value="Отправить">
+                    <button type="reset" class="field_button">Очистить</button>
                     </div>
         `
     }
