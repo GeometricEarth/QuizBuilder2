@@ -1,0 +1,7 @@
+.menu{
+    width: 100%;
+    background-color: rgb(172, 168, 168);
+    padding: 10px 5px;
+    position: fixed;
+    top: 0px;
+}
