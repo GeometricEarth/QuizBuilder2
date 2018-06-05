@@ -4,25 +4,28 @@
     flex-wrap: wrap;
     flex-direction: column;
     padding: 12px;
+    margin-top: 10px;
     box-sizing: border-box;
-    background-color: #FFFFFF;    
-}
-
-.field>div{
-    padding: 10px;
+    box-shadow: 0 -3px 11px rgba(0,0,0,.2);
+    border-radius: 4px;
+    background-color: #fff;   
 }
 
 .field_answer{
     width: 100%;
+    margin-right: 8px;
 }
 
-
+.field>div{
+    padding:  10px;
+    display: flex;
+}
 
 .roundedOne {
     width: 28px;
     height: 28px;
     position: relative;
-    margin: 20px auto;
+    margin-right: 20px;
     background: #fcfff4;
     background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
     border-radius: 50px;
@@ -47,7 +50,7 @@
     top: 2px;
     left: 2px;
     background: #27ae60;
-    background: linear-gradient(to bottom, #27ae60 0%, #145b32 100%);
+    background: linear-gradient(to bottom, #45B4FC 0%, rgb(41, 109, 155) 100%);
     opacity: 0;
     border-radius: 50px;
     box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
@@ -55,25 +58,47 @@
   .roundedOne label:hover::after {
     opacity: 0.3;
   }
-  .roundedOne input[type=checkbox] {
+  .roundedOne input[type=radio] {
     visibility: hidden;
   }
-  .roundedOne input[type=checkbox]:checked + label:after {
+  .roundedOne input[type=radio]:checked + label:after {
     opacity: 1;
   }
-
-
 
 .field_control{
     display: flex;
     justify-content: center;
 }
-
-h2{
-    margin: 0px;
+.field_button{
+    width:203px;
+    height: 56px;
+    margin-right: 10px;
+    border: solid 2px #45B4FC;
+    border-radius: 50px;
+    background-color: #fff;
+    color:#45B4FC;
+    font-size: 20px;
+    font-weight: 700;
+}
+.field_button:focus{
+    outline-width:0px;
+    outline-color: transparent;
 }
 
-#load_icon{
+.field_button:hover{
+    background-color: #45B4FC;
+    color: #fff;
+}
+
+.field_button:active{
+    background-color: rgba(69, 179, 252, 0.801);
+}
+
+.field_header{
+    margin: 0 auto;
+}
+
+.field_load_img{
     width: 200px;
     display: block;
     margin: 0 auto;
