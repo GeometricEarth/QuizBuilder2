@@ -35,7 +35,7 @@ export default class Field {
                     <div>
                         <div class="roundedOne">
                             <input type="radio" id="roundedOne1" name="true"/>
-                            <label for="roundedOne"></label>
+                            <label for="roundedOne1"></label>
                         </div>
                         <input name="inp1" class="field_answer" id="inp1" placeholder="Вариант ответа 1" type="text">
                     </div>    
