@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 12px;
+    padding: 20px;
     margin-top: 10px;
     box-sizing: border-box;
     box-shadow: 0 -3px 11px rgba(0,0,0,.2);
@@ -11,14 +11,41 @@
     background-color: #fff;   
 }
 
+.field_header{
+    margin: 0 auto;
+}
+
+.field_load_img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.field_question{
+    width: 100%;
+    background-color: #E8EEEF;
+    border: none;
+    box-sizing: border-box; 
+    outline: o;
+    padding: 8px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    resize: none;
+}
+.field_question:focus{
+    background-color: #D2D9DD;
+}
+
 .field_answer{
     width: 100%;
-    margin-right: 8px;
     padding: 8px;
+    /* background-color: #E8EEEF; */
+    /* border: 0; */
 }
 
 .field>div{
-    padding:  10px;
+    padding: 12px 0;
     display: flex;
 }
 
@@ -96,14 +123,3 @@
     background-color: rgba(69, 179, 252, 0.801);
 }
 
-.field_header{
-    margin: 0 auto;
-}
-
-.field_load_img{
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    cursor: pointer;
-} 
