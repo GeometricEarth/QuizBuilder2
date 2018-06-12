@@ -1,0 +1,105 @@
+.question{
+    flex-direction: column;
+    /* width: 100%; */
+    /* padding: 20px; */
+    background-color: #f0f0f0; 
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+/***/
+
+.question-num{
+    width: 60px;
+    text-align: center;
+}
+.question-button{
+    width: 100%;
+}
+/* .question-control-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+} */
+.question-accordion {
+    /* background-color: rgb(169, 186, 231); */
+    background: #b7daf7;
+    /* background: linear-gradient(top, #b7daf7,#a3c0d8); */
+    /* background: -webkit-repeating-linear-gradient( left top, left bottom, #333(#b7daf7), to(#a3c0d8)) */
+    background: -webkit-gradient(linear, left top, left bottom, from(hsl(207, 80%, 84%)), to(hsl(207, 40%, 74%)));
+    box-shadow: 
+    0px 0px 0px 1px rgba(155,155,155,0.3), 
+    0px 2px 2px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 1px rgba(112, 111, 111, 0.8);
+    color: #fff;
+    cursor: pointer;
+    padding: 18px 0px;
+    width: 100%;
+    min-height: 70px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+}
+
+.question-accordion.active, .question-accordion:hover {
+    background: rgba(100, 109, 131, 0.534);
+    background: -webkit-gradient(linear, left top, left bottom, from(hsl(216, 96%, 81%)), to(hsl(216, 93%, 70%)));
+}
+
+.question-accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    margin: 0px 10px; 
+} 
+
+.question-accordion.active:after {
+    content: "\2212";
+}
+
+.question-panel {
+    /* padding: 0px 6px; */
+    background-color: rgb(201, 225, 252);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.question-panel>p{
+    padding: 18px 15px 19px 0px;
+    background-color: rgb(159, 201, 233);
+    border-bottom: 2px solid rgba(89, 123, 148, 0.568);
+    margin: 0;
+}
+
+.question-answer{
+    margin: 0 40px 0 10px;
+    width: 100%;
+}
+
+.question-answer-num{
+    color: #fff;
+    background-color: #497fbd;
+    padding: 19px 24px 21px 24px;
+    text-align: center;
+    border-right: 2px solid #d4e8ff;
+    /* border-bottom: 2px solid rgb(113, 185, 243); */
+}
+
+.question-rightAnswer{
+    background-color: #f1c40f; 
+}
+.question-icon{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.question-control{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+} 

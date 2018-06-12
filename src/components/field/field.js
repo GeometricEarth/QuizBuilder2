@@ -1,9 +1,13 @@
 import styles from "./field.css";
+import Emitter from '../../modules/eventEmitter.js';
 
-export default class Field {
+
+export default class Field extends Emitter{
     constructor({
         conteiner
     }){
+        super();
+
         this.conteiner = conteiner;
         this.elem = document.createElement('form');
         this.elem.classList = "field";
@@ -25,6 +29,7 @@ export default class Field {
             question:form.question.value,
             true_answer:'',
             answers: [],
+            img: './src/assets/no-image-icon.png',
         };
         radio_btn.forEach(
             (element, id , arr)=>{
@@ -38,7 +43,10 @@ export default class Field {
             data.answers.push(element.value);
         });
         
-        console.dir(data);
+        let new_question = new CustomEvent("new_question",{
+            detail: data
+        })
+        this.dispatchEvent(new_question);
     }
 
     template(){

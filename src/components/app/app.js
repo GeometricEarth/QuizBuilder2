@@ -18,9 +18,13 @@ export default class App {
         this.list = new Question__list({
             conteiner: this.elem,
         });
-        
+
         this.field = new Field({
             conteiner: this.elem,
         });
+        this.field.addEventListener('new_question',
+            (event) => {
+                this.list.addQuestion(event.detail);
+            })
     }
 }
