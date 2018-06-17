@@ -62,35 +62,35 @@ export default class Field extends Emitter{
                     <img class="field_load_img" src="./src/assets/no-image-icon.png">
                     
                     <textarea class="field_question" name="question" placeholder="Текст вопроса"
-                    rows="4" spellcheck ></textarea>
+                    rows="4" spellcheck autocomplete="off"></textarea>
                     
                     <div>
                         <div class="roundedOne">
                             <input type="radio" id="roundedOne1" name="true" value="1"/>
                             <label for="roundedOne1"></label>
                         </div>
-                        <input name="inp" class="field_answer" id="inp1" placeholder="Вариант ответа 1" type="text" spellcheck >
+                        <input name="inp" class="field_answer" id="inp1" placeholder="Вариант ответа 1" type="text" spellcheck autocomplete="off" >
                     </div>    
                     <div>  
                         <div class="roundedOne">
                             <input type="radio" id="roundedOne2" name="true" value="2"/>
                             <label for="roundedOne2"></label>
                         </div>
-                        <input name="inp" class="field_answer" id="inp2" placeholder="Вариант ответа 2" type="text" spellcheck >
+                        <input name="inp" class="field_answer" id="inp2" placeholder="Вариант ответа 2" type="text" spellcheck autocomplete="off">
                     </div>
                     <div>
                         <div class="roundedOne">
                             <input type="radio" id="roundedOne3" name="true" value="3"/>
                             <label for="roundedOne3"></label>
                         </div>
-                        <input name="inp" class="field_answer" id="inp3" placeholder="Вариант ответа 3" type="text" spellcheck >
+                        <input name="inp" class="field_answer" id="inp3" placeholder="Вариант ответа 3" type="text" spellcheck autocomplete="off">
                     </div>
                     <div>
                         <div class="roundedOne">
                             <input type="radio" id="roundedOne4" name="true" value="4"/>
                             <label for="roundedOne4"></label>
                         </div>
-                        <input name="inp" class="field_answer" id="inp4" placeholder="Вариант ответа 4" type="text" spellcheck >
+                        <input name="inp" class="field_answer" id="inp4" placeholder="Вариант ответа 4" type="text" spellcheck autocomplete="off">
                     </div>
                     <div class="field_control">
                     <input type="submit" class="field_submit field_button" value="Отправить">
