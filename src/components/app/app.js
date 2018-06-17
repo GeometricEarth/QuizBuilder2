@@ -16,6 +16,8 @@ export default class App {
         this.elem.classList = "app";
         this.conteiner.append(this.elem);
 
+        this.menu = new Menu({conteiner: this.elem})
+
         this.list = new Question__list({
             conteiner: this.elem,
         });
