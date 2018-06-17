@@ -1,5 +1,6 @@
 .list{
     width: 100%;
-    min-height: 400px;
-    background-color: burlywood;
+    padding:8px 0;
+    /* min-height: 400px; */
+    /* background-color: burlywood; */
 }
