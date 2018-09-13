@@ -48,7 +48,7 @@ export default class Field extends Emitter{
 
 
         let new_question = new CustomEvent("new_question",{
-            detail: mock
+            detail: data
         })
         this.dispatchEvent(new_question);
         this.elem.scrollIntoView(false);
